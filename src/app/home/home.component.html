@@ -1,20 +1,8 @@
 <div class="row">
-  <app-post class="col-12 col-md-6"
-    [post]="posts[0]"
-  ></app-post>
-  <app-post class="col-12 col-md-6"
-    [post]="posts[1]"
-  ></app-post>
-  <app-post class="col-12 col-md-6"
-    [post]="posts[2]"
-  ></app-post>
-  <app-post class="col-12 col-md-6"
-    [post]="posts[3]"
-  ></app-post>
-  <app-post class="col-12 col-md-6"
-    [post]="posts[4]"
-  ></app-post>
-  <app-post class="col-12 col-md-6"
-    [post]="posts[5]"
-  ></app-post>
+  <ng-container *ngFor="let post of posts">
+    <app-post class="col-12 col-md-6"
+       *ngIf="post.img"
+       [post]="post"
+    ></app-post>
+  </ng-container>
 </div>

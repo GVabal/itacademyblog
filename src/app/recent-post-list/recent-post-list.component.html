@@ -1,0 +1,5 @@
+<ul class="nav flex-column">
+  <li class="nav-item" *ngFor="let post of posts">
+    <a routerLink="/post/{{post.id}}" class="nav-link">{{ post.title }}</a>
+  </li>
+</ul>
