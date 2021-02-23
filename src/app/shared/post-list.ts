@@ -8,7 +8,8 @@ export const postList: Post[] = [
     content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Autem commodi cupiditate dolorem doloremque dolorum fugiat
           saepe sint soluta ullam voluptates voluptatum?`,
-    img: "assets/photo-0.jpeg"
+    img: "assets/photo-0.jpeg",
+    likes: 0
   },
   {
     id: "1",
@@ -17,7 +18,8 @@ export const postList: Post[] = [
     content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Autem commodi cupiditate dolorem doloremque dolorum fugiat
           saepe sint soluta ullam voluptates voluptatum?`,
-    img: "assets/photo-1.jpeg"
+    img: "assets/photo-1.jpeg",
+    likes: 0
   },
   {
     id: "2",
@@ -26,7 +28,8 @@ export const postList: Post[] = [
     content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Autem commodi cupiditate dolorem doloremque dolorum fugiat
           saepe sint soluta ullam voluptates voluptatum?`,
-    img: "assets/photo-2.jpeg"
+    img: "assets/photo-2.jpeg",
+    likes: 0
   },
   {
     id: "3",
@@ -34,7 +37,8 @@ export const postList: Post[] = [
     title: "Post 4",
     content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Autem commodi cupiditate dolorem doloremque dolorum fugiat
-          saepe sint soluta ullam voluptates voluptatum?`
+          saepe sint soluta ullam voluptates voluptatum?`,
+    likes: 0
   },
   {
     id: "4",
@@ -43,7 +47,8 @@ export const postList: Post[] = [
     content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Autem commodi cupiditate dolorem doloremque dolorum fugiat
           saepe sint soluta ullam voluptates voluptatum?`,
-    img: "assets/photo-4.jpeg"
+    img: "assets/photo-4.jpeg",
+    likes: 0
   },
   {
     id: "5",
@@ -52,6 +57,7 @@ export const postList: Post[] = [
     content: `Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Autem commodi cupiditate dolorem doloremque dolorum fugiat
           saepe sint soluta ullam voluptates voluptatum?`,
-    img: "assets/photo-5.jpeg"
+    img: "assets/photo-5.jpeg",
+    likes: 0
   }
 ];

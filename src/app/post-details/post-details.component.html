@@ -1,4 +1,4 @@
-<div class="card mb-3">
+<div class="card mb-3" *ngIf="post$ | async as post">
   <img class="card-img-top" [src]="post.img" alt="{{ post.title }}"/>
   <div class="card-body">
     <h5 class="card-title">{{ post.title }}</h5>
@@ -6,7 +6,8 @@
     <p class="card-text"><small class="text-muted">Written by {{ post.author }}</small></p>
     <div>
       <a href="#" class="mx-2">Comments (0)</a>
-      <a href="#">Like (0)</a>
+      <button (click)="addLike(post)">Like ({{ post.likes }})</button>
+      <button (click)="removeLike(post)">Dislike</button>
     </div>
   </div>
 </div>

@@ -8,6 +8,8 @@ import { PostComponent } from './post/post.component';
 import { PostDetailsComponent } from './post-details/post-details.component';
 import { RecentPostListComponent } from './recent-post-list/recent-post-list.component';
 import {HttpClientModule} from '@angular/common/http';
+import { TemplateFormComponent } from './template-form/template-form.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import {HttpClientModule} from '@angular/common/http';
     HomeComponent,
     PostComponent,
     PostDetailsComponent,
-    RecentPostListComponent
+    RecentPostListComponent,
+    TemplateFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,8 +15,11 @@ export class RecentPostListComponent implements OnInit {
 
   ngOnInit(): void {
     this.postService.loadPosts()
-      .pipe(map(posts => posts.filter(post => post.img)))
+      .pipe(
+        // map(posts => posts.filter(post => post.img)),
+        map(posts => [...posts].reverse()),
+        map(posts => posts.slice(0, 3))
+      )
       .subscribe(posts => this.posts = posts);
   }
-
 }

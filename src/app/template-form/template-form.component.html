@@ -1,0 +1,21 @@
+<form #postForm="ngForm" (ngSubmit)="onSubmit()">
+  <fieldset [disabled]="submitted">
+    <legend>New Post</legend>
+    <input type="text" placeholder="Author" name="author"
+           required pattern="^[a-zA-Z ]+$" [(ngModel)]="model.author" #author="ngModel">
+    <span *ngIf="author.invalid && author.touched">Name must only contain "normal" letters!</span>
+    <br>
+    <input type="text" placeholder="Title" name="title"
+           required [(ngModel)]="model.title" #title="ngModel">
+    <span *ngIf="title.invalid && title.touched">Must have title!</span>
+    <br>
+    <textarea cols="30" rows="4" placeholder="Content" name="content"
+              required minlength="5" [(ngModel)]="model.content" #name="ngModel"
+    ></textarea>
+    <span *ngIf="name.invalid && name.touched">Needs more content!</span>
+    <br>
+    <button [disabled]="!postForm.valid">Post!</button>
+    <p *ngIf="submitted">Woo woo!</p>
+  </fieldset>
+  <button type="button" (click)="postForm.resetForm(); submitted = false">Reset</button>
+</form>

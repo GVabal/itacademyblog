@@ -11,10 +11,14 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   loadPosts(): Observable<Post[]> {
-    return this.http.get<Post[]>('http://localhost:3000/posts');
+    return this.http.get<Post[]>('api/posts');
   }
 
   getPost(id: string): Observable<Post> {
-    return this.http.get<Post>(`http://localhost:3000/posts/${id}`);
+    return this.http.get<Post>(`api/posts/${id}`);
+  }
+
+  addPost(request: Post): Observable<Post> {
+    return this.http.post<Post>('api/posts', request);
   }
 }
