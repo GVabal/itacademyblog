@@ -21,4 +21,8 @@ export class PostService {
   addPost(request: Post): Observable<Post> {
     return this.http.post<Post>('api/posts', request);
   }
+
+  getPostsOfAuthor(name: string): Observable<Post[]> {
+    return this.http.get<Post[]>(`http://localhost:3000/posts?author_like=${name}`);
+  }
 }
