@@ -3,6 +3,7 @@
     <legend>New Post</legend>
     <input type="text" placeholder="Author" name="author"
            formControlName="author">
+    <span *ngIf="author.errors?.asyncValidator">Only oldschoolers can post!</span>
     <span *ngIf="author.errors?.required && author.touched">Must have author!</span>
     <span *ngIf="author.errors?.pattern">Name must only contain "normal" letters!</span>
     <br>
@@ -12,11 +13,20 @@
     <br>
     <textarea cols="30" rows="4" placeholder="Content" name="content"
               formControlName="content"></textarea>
+    <span>{{ contentLength }}/25</span>
     <span *ngIf="content.errors?.required && content.touched">Cannot be empty!</span>
     <span *ngIf="content.errors?.minlength && content.touched">Needs more content!</span>
+    <span *ngIf="content.errors?.maxlength && content.touched">Needs less content!</span>
+    <span *ngIf="content.errors?.cleanLanguage && content.touched">
+      {{ content.errors?.customError.value }}!
+    </span>
     <br>
     <button [disabled]="postForm.invalid">Post!</button>
     <p *ngIf="submitted">Woo woo!</p>
   </fieldset>
-  <button type="button" (click)="postForm.reset(); submitted = false">Reset</button>
+  <button type="button" (click)="resetForm()">Reset</button>
 </form>
+
+<p *ngIf="postForm.errors?.crossFieldError && title.touched">Ya cheeky little bugger!</p>
+
+{{ content.errors | json }}
