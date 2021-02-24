@@ -55,88 +55,18 @@
       "likes": 1
     },
     {
-      "author": "Armandas",
-      "title": "This is Something",
-      "content": "OK",
-      "id": "7",
-      "likes": 0
-    },
-    {
-      "author": "adsa",
-      "title": "asdas",
-      "content": "asdas",
-      "id": "JrDA0Yp",
-      "likes": 0
-    },
-    {
-      "author": "dsadasdas",
-      "title": "asdasdas",
-      "content": "asdasda",
-      "id": "2CKS52Y",
-      "likes": 0
-    },
-    {
       "author": "Gabrielius",
-      "title": "This is Something",
-      "content": "Boo!",
-      "id": "tvmnyN3",
-      "likes": 0
-    },
-    {
-      "author": "Gabrielius",
-      "title": "Heuristics",
-      "content": "OKAI",
-      "id": "iq-IUtM",
-      "likes": 0
-    },
-    {
-      "author": null,
-      "title": null,
-      "content": null,
-      "id": "9W5LSzL",
-      "likes": 0
-    },
-    {
-      "author": "Gabrielius",
-      "title": "Another One",
-      "content": "asa",
-      "id": "K3aPsSJ",
-      "likes": 0
-    },
-    {
-      "author": null,
-      "title": null,
-      "content": null,
-      "id": "pTvcq5v",
-      "likes": 0
-    },
-    {
-      "author": null,
-      "title": null,
-      "content": null,
-      "id": "ojI5bbY",
-      "likes": 0
-    },
-    {
-      "author": "asdas",
-      "title": "asdas",
-      "content": "asdasd",
-      "id": "WMSrjG5",
-      "likes": 0
-    },
-    {
-      "author": "asdasdas",
-      "title": "asdasdsad",
-      "content": "asdsadsadas",
-      "id": "gWAZOG0",
-      "likes": 0
-    },
-    {
-      "author": "next",
-      "title": "next",
-      "content": "next",
+      "title": "Bandymas",
+      "content": "very important?",
       "likes": 0,
-      "id": "yRGjMaX"
+      "id": "FWVnb3g"
+    },
+    {
+      "author": "Gabrielius",
+      "title": "Reactive",
+      "content": "Content",
+      "likes": 3,
+      "id": "vZhB7HL"
     }
   ]
 }

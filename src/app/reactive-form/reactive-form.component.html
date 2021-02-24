@@ -1,0 +1,22 @@
+<form [formGroup]="postForm" (ngSubmit)="onSubmit()">
+  <fieldset [disabled]="submitted">
+    <legend>New Post</legend>
+    <input type="text" placeholder="Author" name="author"
+           formControlName="author">
+    <span *ngIf="author.errors?.required && author.touched">Must have author!</span>
+    <span *ngIf="author.errors?.pattern">Name must only contain "normal" letters!</span>
+    <br>
+    <input type="text" placeholder="Title" name="title"
+           formControlName="title">
+    <span *ngIf="title.errors?.required && title.touched">Must have title!</span>
+    <br>
+    <textarea cols="30" rows="4" placeholder="Content" name="content"
+              formControlName="content"></textarea>
+    <span *ngIf="content.errors?.required && content.touched">Cannot be empty!</span>
+    <span *ngIf="content.errors?.minlength && content.touched">Needs more content!</span>
+    <br>
+    <button [disabled]="postForm.invalid">Post!</button>
+    <p *ngIf="submitted">Woo woo!</p>
+  </fieldset>
+  <button type="button" (click)="postForm.reset(); submitted = false">Reset</button>
+</form>

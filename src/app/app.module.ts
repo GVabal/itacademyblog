@@ -9,7 +9,8 @@ import { PostDetailsComponent } from './post-details/post-details.component';
 import { RecentPostListComponent } from './recent-post-list/recent-post-list.component';
 import {HttpClientModule} from '@angular/common/http';
 import { TemplateFormComponent } from './template-form/template-form.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,14 @@ import {FormsModule} from '@angular/forms';
     PostDetailsComponent,
     RecentPostListComponent,
     TemplateFormComponent,
+    ReactiveFormComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
